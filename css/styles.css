@@ -765,10 +765,16 @@
      /* =======BACKDROP===== */
 
    
-    /* .is-open 
+
+    .backdrop.is-open 
     {
-      : ;
-    } */
+      display: block;
+    }
+    
+    .modal.is-open 
+    {
+      display: block;
+    }
 
    .backdrop 
     {
@@ -780,12 +786,12 @@
       background-color: rgba(46, 47, 66, 0.4);
     }  
 
-    /* .is-hidden 
+   .is-hidden 
     {
       opacity: 0;
       visibility: hidden;
       pointer-events: none;
-     }   */
+     }  
 
 
      /* =====ENDBACKDROP===== */
