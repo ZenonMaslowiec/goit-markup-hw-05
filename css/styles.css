@@ -89,12 +89,14 @@
 
         .btn-footer 
         {
-          width: 165px;
+          min-width: 165px;
           height: 40px;
           padding: 8px 24px 8px 24px;
           border-radius: 4px;
-          display: inline-flex;
-          justify-content: space-between;
+          /* display: inline-flex; */
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         .btn-modal 
@@ -716,14 +718,15 @@
     {
       fill: #f4f4fd;
     }
-/* 
+ 
     .form {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-end;
-      flex-wrap: wrap;
-    } */
+      gap: 24px;
+      /* flex-direction: row; */
+      /* justify-content: space-between; */
+      /* align-items: flex-end; */
+      /* flex-wrap: wrap; */
+   } 
 
     .form-item 
     {
@@ -731,6 +734,7 @@
       line-height: 1.5;
       letter-spacing: 0.02em;
       color: #FFFFFF;
+      margin-bottom: 16px;
     }
 
 
@@ -738,22 +742,31 @@
     {
       width: 264px;
       height: 40px;
-      margin-top: 16px;
-      margin-right: 24px;
+      /* margin-top: 16px; */
+      /* margin-right: 24px; */
       padding-left: 16px;
       color: #fff;
       border: 1px solid #FFFFFF;
       border-radius: 4px;
-      box-shadow: 0px 4px 4px 0px #00000026;
-      background: #2E2F42;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      /* background: #2E2F42; */
+      background-color: transparent;
+      font-size: 12px;
+      line-height: 2;
+      letter-spacing: 0.04em;
     }
 
     .form-news-text::placeholder 
     {
       color: #FFFFFF;
-      font-size: 12px;
-      line-height: 2.0;
-      letter-spacing: 0.04em;
+      /* font-size: 12px; */
+      /* line-height: 2.0; */
+      /* letter-spacing: 0.04em; */
+    }
+
+    .footer-form-icon 
+    {
+      margin-left: 16px;
     }
 
      /*========END-FOOTER========*/
