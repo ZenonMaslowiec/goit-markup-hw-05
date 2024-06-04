@@ -37,9 +37,7 @@
               <a class="navigation-list-link" href="">Portfolio</a>
             </li>
             <li class="navigation-list-item">
-              <a class="navigation-list-link" href="./backdrop.html"
-                >Contacts</a
-              >
+              <a class="navigation-list-link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -527,65 +525,96 @@
 
     <!-- MODAL -->
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button type="button" class="close-btn">
+          X
           <svg class="modal-icon-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-icon-send"></use>
           </svg>
         </button>
-        <p class="modal-form-item">
-          Leave your contacts and we will call you back
-        </p>
+        <p class="modal-item">Leave your contacts and we will call you back</p>
         <form class="modal-form" action="#" method="post">
-          <label class="modal-form-name">
-            <span class="modal-name">Name</span>
+          <div class="modal-form-item">
+            <label class="modal-form-name" for="user-name"
+              >Name
+              <div class="modal-name">
+                <!-- klasa użyta - uwaga <span class="modal-name">Name</span> -->
+                <input
+                  class="modal-form-name-text-item"
+                  id="user-name"
+                  type="text"
+                  name="user-name"
+                />
+                <svg class="modal-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="modal-form-item">
+            <label class="modal-form-phone-number" for="phone_number"
+              >Phone
+              <div class="modal-name">
+                <!-- <span class="modal-phone-number">Phone</span> -->
+                <input
+                  class="modal-form-phone-number-text"
+                  id="phone_number"
+                  type="tel"
+                  name="phone_number"
+                />
+                <svg class="modal-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="modal-form-item">
+            <label class="modal-form-email" for="email"
+              >Email
+              <div class="modal-name">
+                <!-- <span class="modal-email">Email</span> -->
+                <input
+                  class="modal-form-email-text"
+                  id="email"
+                  type="email"
+                  name="email"
+                />
+                <svg class="modal-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="modal-form-item-textarea">
+            <label class="modal-form-textarea" for="user-comment"
+              >Comment<textarea
+                class="modal-form-textarea-text"
+                id="user-comment"
+                name="user-comment"
+                rows="5"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+          </div>
+          <div class="modal-checkbox">
             <input
-              class="modal-form-name-text-item"
-              type="text"
-              name="username"
+              class="modal-form-policy visually-hidden"
+              id="user-privacy"
+              value="true"
+              type="checkbox"
+              name="user-privacy"
             />
-            <svg class="modal-icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
-          </label>
-          <label class="modal-form-phone-number">
-            <span class="modal-phone-number">Phone</span>
-            <input
-              class="modal-form-phone-number-text"
-              type="tel"
-              name="phone_number"
-            />
-            <svg class="modal-icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-          </label>
-          <label class="modal-form-email">
-            <span class="modal-email">Email</span>
-            <input class="modal-form-email-text" type="email" name="email" />
-            <svg class="modal-icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-          </label>
-          <label class="modal-form-textarea"
-            >Comment<textarea
-              class="modal-form-textarea-text"
-              name="feedback"
-              rows="5"
-              placeholder="Text input"
-            ></textarea>
-          </label>
-          <input
-            class="modal-form-policy visually-hidden"
-            id="user-policy"
-            type="checkbox"
-            name="policy"
-          />
-          <label class="modal-form-policy-text" for="user-policy"
-            >I accept the terms and conditions of the
-            <a class="modal-form-policy-link" href="#">Privacy Policy</a>
-            <a class="modal-form-policy-link" href="#"></a
-          ></label>
+            <label class="modal-form-policy-text" for="user-privacy"
+              ><span class="modal-checkbox-text"
+                ><svg class="modal-checkbox-icon" width="10" height="8">
+                  <use href="./images/vector.svg#surface1"></use></svg></span
+              >I accept the terms and conditions of the
+              <a class="modal-form-policy-link" href="#">Privacy Policy</a>
+              <!-- <a class="modal-form-policy-link" href="#"></a
+              > -->
+            </label>
+          </div>
 
           <button class="modal-btn btn-modal" type="submit">Send</button>
         </form>
@@ -606,11 +635,7 @@
                   <a class="navigation-list-link" href="">Portfolio</a>
                 </li>
                 <li class="navigation-list-item">
-                  <a
-                    class="navigation-list-link navigation-list-link-active"
-                    href="./backdrop.html"
-                    >Contacts</a
-                  >
+                  <a class="navigation-list-link" href="">Contacts</a>
                 </li>
               </ul>
             </nav>
@@ -708,7 +733,6 @@
         </div> -->
       </div>
     </div>
-    <!-- </div> -->
   </body>
 </html>
 <!-- do usunięcia -->
