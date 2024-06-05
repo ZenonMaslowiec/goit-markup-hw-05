@@ -891,9 +891,9 @@
     }
 
     .modal-form-name,
-    .modal-form-phone-number,
-    .modal-form-email,
-    .modal-form-textarea
+    /* .modal-form-phone-number, */
+    /* .modal-form-email, */
+    /* .modal-form-textarea */
     {
       font-size: 12px;
       line-height: 1.17;
@@ -923,9 +923,9 @@
       margin-bottom: 4px;
    }  */
 
-    .modal-form-name-text-item,
-    .modal-form-phone-number-text,
-    .modal-form-email-text
+    .modal-form-name-text-item
+    /* .modal-form-phone-number-text, */
+    /* .modal-form-email-text */
     {
       width: 100%; 
       height: 40px;
@@ -998,25 +998,37 @@
       margin-bottom: 4px;
     } */
 
+    .modal-form-name-text-item:hover,
+    .modal-form-name-text-item:focus
+    {
+      fill: #4D5AE5;
+      border-color: #4D5AE5;
+    }
+
     .modal-form-name-text-item:focus,
-    .modal-form-phone-number-text:focus,
-    .modal-form-email-text:focus,
+    /* .modal-form-phone-number-text:focus, */
+    /* .modal-form-email-text:focus, */
     .modal-form-textarea-text:focus, 
     .modal-form-name-text-item:hover,
-    .modal-form-phone-number-text:hover,
-    .modal-form-email-text:hover,
+    /* .modal-form-phone-number-text:hover, */
+    /* .modal-form-email-text:hover, */
     .modal-form-textarea-text:hover
     {
-      /* fill: #4D5AE5; */
+      fill: #4D5AE5;
       /* border: 1px solid #4D5AE5; */
       /* transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1); */
       border-color: #4D5AE5;
     }
 
+    .modal-form-name-text-item:focus-within
+    {
+      fill: #4D5AE5;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
     
-    .modal-form-name:focus-within,
-    .modal-form-phone-number:focus-within,
-    .modal-form-email:focus-within
+    .modal-form-name:focus-within
+    /* .modal-form-phone-number:focus-within, */
+    /* .modal-form-email:focus-within */
     {   
       fill: #4D5AE5;
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
